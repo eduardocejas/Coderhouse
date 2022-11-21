@@ -214,12 +214,6 @@ hr{
   border-color: #000000;
   padding: 1px;
 }
-.map {
-  width: 40px;
-  border-color: #000000;
-  padding: .5rem;
-
-}
 
 a{
     font-size: 1em;
@@ -262,6 +256,7 @@ main form fieldset {
 }
 .carousel-item{
   justify-content: center;
+  
 }
 
 
