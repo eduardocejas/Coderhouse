@@ -59,7 +59,7 @@ header nav li a:hover {
   padding-left: 1rem;
 }
 .container {  display: grid;
-  grid-template-columns: 0.3fr 1.4fr;
+  grid-template-columns: 0.3fr 1fr;
   grid-template-rows: 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr;
   gap: 0px 2px;
   grid-auto-flow: row;
@@ -74,6 +74,30 @@ header nav li a:hover {
     "img4 p4"
     "sub5 sub5"
     "img5 p5";
+}
+@media only screen and (max-width: 768px){
+.container {display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  gap: 0px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sub1"
+    "img1"
+    "p1"
+    "sub2"
+    "img2"
+    "p2"
+    "sub3"
+    "img3"
+    "p3"
+    "sub4"
+    "img4"
+    "p4"
+    "sub5"
+    "img5"
+    "p5";
+  }
 }
 
 .sub1 { grid-area: sub1; }
