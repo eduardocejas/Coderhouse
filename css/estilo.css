@@ -99,13 +99,13 @@ header nav li a:hover {
     "p5";
   }
 }
-@media only screen and (max-width: 10000px){
- .d-block {
-  width: 50%;
+.carousel{
+  width: 30%;
+}
+@media only screen and (max-width: 768px){
+ .carousel{
+  width: 75%;
  }
- 
-
-
 }
 
 
