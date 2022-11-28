@@ -208,9 +208,13 @@ header nav li a:hover {
  .carousel{
   width: 75%;
  }
-
- 
 }
+@media only screen and (min-width: 768px){
+  .colmap{
+   width: 50%;
+  }
+ }
+
 .sub1 { grid-area: sub1; }
 
 .sub2 { grid-area: sub2; }
@@ -366,8 +370,7 @@ main form fieldset {
   padding: 4px;
 }
 .carousel-item{
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 
