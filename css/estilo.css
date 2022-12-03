@@ -418,10 +418,13 @@ main form fieldset {
 
 .tprod{
   font-size: 2rem;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  margin: 0;
 }
 .imgprod{
   border: #000000 3px solid;
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 768px){
