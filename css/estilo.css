@@ -160,6 +160,16 @@ header nav li a:hover {
   font-weight: bold;
   padding-left: 1rem;
 }
+.pservicios{
+  background-color: #9bd1f5;
+  line-height: 1.5;
+  opacity: 0.9;
+  font-weight: bold;
+  color: #000000;
+  padding: 8px;
+  border-radius: 10px;
+}
+
 .container {  display: grid;
   grid-template-columns: 0.3fr 1fr;
   grid-template-rows: 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr 0.1fr 0.3fr;
@@ -373,7 +383,65 @@ main form fieldset {
   justify-content: center; 
 }
 
+.productos1 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr  1fr  1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    
+    "i1 i2 i3"
+    
+    "i4 i5 i6"
+   
+    "i7 i8 i9";
+}
 
+.i1 { grid-area: i1;}
+
+.i2 { grid-area: i2; }
+
+.i3 { grid-area: i3; }
+
+.i4 { grid-area: i4; }
+
+.i5 { grid-area: i5; }
+
+.i6 { grid-area: i6; }
+
+.i7 { grid-area: i7; }
+
+.i8 { grid-area: i8; }
+
+.i9 { grid-area: i9; }
+
+.tprod{
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+.imgprod{
+  border: #000000 3px solid;
+}
+
+@media only screen and (max-width: 768px){
+  .productos1 {display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 0px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "i3"
+      "i4"
+      "i5"
+      "i6"
+      "i7"
+      "i8"
+      "i9";
+    }  
+  }
 footer {
     background: #5299eb;
     padding: 8px 0;
