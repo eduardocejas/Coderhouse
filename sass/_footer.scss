@@ -1,0 +1,20 @@
+footer {
+  background: #5299eb;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 55px;
+  li {
+    display: inline-block;
+    padding: 0 3%;
+    img {
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+ 
+}
+

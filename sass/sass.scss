@@ -1,0 +1,46 @@
+$celeste: #9bd1f5;
+$negro: #000000;
+
+@import "header";
+@import "footer";
+@import "index";
+@import "producto";
+@import "tupedido";
+@import "servicios";
+@import "sobrenosotros";
+
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-size: 1em;
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    #main-wrapper {
+      min-height: 100vh;
+      position: relative;
+  
+    }
+  
+}
+
+main {
+  width: 90%;
+  margin: 10px auto 0;
+  padding-bottom: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  
+}
+
+hr{
+  background-color: #000000;
+  border-color: #000000;
+  padding: 1px;
+}
+
+body{
+  background-image: url(../imagenes/nube2.png);
+  /*background-repeat: no-repeat;
+  background-size:contain*/
+}

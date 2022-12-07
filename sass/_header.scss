@@ -1,0 +1,129 @@
+header {
+  height: 55px;
+  background-image: linear-gradient(to bottom, #b6ddf0, #1bd1ff);
+  position: relative;
+  
+  header nav {
+  position: absolute;
+  bottom: 2px;
+  }
+}
+header nav ul > li {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: baseline;
+}
+header nav li a {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s;
+}
+header nav li a:hover {
+  font-size: 1.2em;
+  transition: all 0,3s;
+}
+
+header div.contenedor {
+  place-content: flex-start;
+  header div.contenedor nav{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+  }
+  .titulo{
+    display: none;
+    }
+}
+
+#menu, #menu-check{
+display: none;
+}
+
+@media only screen and (max-width: 900px){
+header div.contenedor, header div.contenedor ul, header div.contenedor ul li{
+  display: inline;
+  }
+  header div.contenedor nav {
+  width: 100%;
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 250px; 
+  background-color: #1bd1ff;
+  padding-top: 0.5em;
+  padding-right: 1.5em;
+  opacity: 1;
+  color: #ffffff;
+  font-size: 1.4em;
+  z-index: 2000;
+  }
+}
+
+@media only screen and (max-width:768px) {
+header div.contenedor {
+  display: flex;
+  place-content: space-between;
+}
+#menu-check:not(:checked) ~ nav{
+  display: none;
+}
+#menu-check:checked ~ nav{
+  display: block;
+}
+#menu{
+  display: block;
+  color: #000000;
+  font-size: 1.5em ;
+  font-weight: bold;
+  position: absolute;
+  right:  .5em;
+  top: .3em;
+  border-radius:  0.3em;
+  border: 2px solid black;
+  cursor: pointer;
+  z-index: 9999;
+}
+#menu:hover {
+  color: white;
+  background: #949090;
+}
+#menu-cerrar {
+  display: none;
+}
+#menu-check:checked ~ label #menu-abrir{
+  display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar {
+  display:block;
+}
+#menu-check:checked ~ #titulo{
+  display: none;
+}
+#titulo{
+  display: block;
+  top: 0.3em;
+  left: 0.5em;
+  position: absolute;
+}
+
+header div.contenedor nav ul a {
+  color: rgb(0, 0, 0);
+  background-color: none;  
+}
+header div.contenedor nav ul, header div.contenedor nav ul li{
+  display: block;
+  text-align: right;
+}
+header nav li a {
+  font-weight: bold;
+}
+}
+
+.disable{
+  font-size: 30px;
+  opacity: 0.6;
+  pointer-events: none;
+}

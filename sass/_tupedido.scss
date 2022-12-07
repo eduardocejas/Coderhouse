@@ -1,0 +1,23 @@
+.section1{
+    background-color: $celeste;
+    line-height: 1.5;
+    opacity: 0.9;
+    font-weight: bold;
+    color: $negro;
+    padding: 20px;
+    border-radius: 10px;
+  }
+main form fieldset {
+    margin: 0;
+  }
+
+.form2{
+    width: 80%;
+    background-color: #a5d1eb;
+    padding: 1rem;
+    border: $negro 2px solid;
+    border-radius: 10px;
+    .form-control{
+      padding: 4px;
+    }
+  }
